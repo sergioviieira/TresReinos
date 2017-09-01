@@ -23,6 +23,11 @@ public class Prioncipal {
     System.out.println(s.getQtFicarVivo("Montante", governantes));
     System.out.println(s.getQtFicarVivo("Lenha", governantes));
     System.out.println(s.getQtFicarVivo("Clareza", governantes));
+    
+    // questao C
+    System.out.println(s.CalcularQntViagem("Montante", governantes));
+    System.out.println(s.CalcularQntViagem("Lenha", governantes));
+    System.out.println(s.CalcularQntViagem("Clareza", governantes));
        
        
        

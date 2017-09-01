@@ -39,8 +39,8 @@ public class Solucao {
     		  if(governantes.get(i).getNome().equals(nomeGovernante)){
     			  resultado = "Pedido do governante: " + nomeGovernante + "\n" + 
     		                "Ouro: " + governantes.get(i).getPedidoOuro() + "\n" +
-    			            "Madeira: " + governantes.get(i).getPedidoMadeira()+ "\n" +
-    			            "Agua: " + governantes.get(i).getPedidoAgua();
+    			            "Madeira: " + governantes.get(i).getPedidoAgua()+ "\n" +
+    			            "Agua: " + governantes.get(i).getPedidoMadeira();
     		  }
       
     return resultado;
@@ -56,8 +56,8 @@ public class Solucao {
 	   for (int i=0; i <governantes.size(); i++) {
 		   if (governantes.get(i).getNome().equals(nomeGovernante)) {
 			resultado = (governantes.get(i).getPedidoOuro() / 50) +
-					(governantes.get(i).getPedidoMadeira() / 100) +
-					(governantes.get(i).getPedidoAgua() / 1000) ;
+					(governantes.get(i).getPedidoAgua() / 100) +
+					(governantes.get(i).getPedidoMadeira() / 1000) ;
 		}
 	   }
 	   return resultado;
