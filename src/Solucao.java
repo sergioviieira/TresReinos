@@ -45,8 +45,24 @@ public class Solucao {
       
     return resultado;
     }
+	
+
+
+
+   //questao C
+   public int CalcularQntViagem(String nomeGovernante, ArrayList<Governante> governantes){
+	   
+	   int resultado = 0;
+	   for (int i=0; i <governantes.size(); i++) {
+		   if (governantes.get(i).getNome().equals(nomeGovernante)) {
+			resultado = (governantes.get(i).getPedidoOuro() / 50) +
+					(governantes.get(i).getPedidoMadeira() / 100) +
+					(governantes.get(i).getPedidoAgua() / 1000) ;
+		}
+	   }
+	   return resultado;
+   }
 }	
-    	
     	
     	
     	
