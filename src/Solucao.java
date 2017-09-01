@@ -32,8 +32,20 @@ public class Solucao {
     	}
     {
     }
+    // questao B
+      public String getQtFicarVivo(String nomeGovernante, ArrayList<Governante> governantes){
+    	  String resultado="";
+    	  for (int i =0; i <governantes.size(); i++)
+    		  if(governantes.get(i).getNome().equals(nomeGovernante)){
+    			  resultado = "Pedido do governante: " + nomeGovernante + "\n" + 
+    		                "Ouro: " + governantes.get(i).getPedidoOuro() + "\n" +
+    			            "Madeira: " + governantes.get(i).getPedidoMadeira()+ "\n" +
+    			            "Agua: " + governantes.get(i).getPedidoAgua();
+    		  }
+      
+    return resultado;
     }
-    	
+}	
     	
     	
     	
